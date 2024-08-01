@@ -5817,6 +5817,7 @@ textarea.form-control-lg {
   display: block;
 }
 
+
 .carousel-item-next:not(.carousel-item-start),
 .active.carousel-item-end {
   transform: translateX(100%);
@@ -11010,19 +11011,19 @@ header.masthead h1, header.masthead .h1 {
 
 #carousel-title {
   font-weight: bold;
-    font-size: 3vw;
+    font-size: 5vw;
     transition: all 0.3s ease;
   }
   
   #carousel-txt {
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 3vw;
     transition: all 0.3s ease;
   }
   
   #btn-carr {
     padding: 1vw 2vw;
-    font-size: 1.5vw;
+    font-size: 2vw;
     transition: all 0.3s ease;
   }
 
@@ -11030,7 +11031,7 @@ header.masthead {
   position: relative;
   width: 100%;
   height: auto;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 header.masthead {
@@ -11038,10 +11039,33 @@ header.masthead {
   background-position: center;
 }
 
-header.masthead .carousel-caption {
+@media (max-width: 768px) {
+  .carousel {
+    padding-top: 3.4rem;
+  }
+
+  .carousel-item.active {
+    height: 50vh;
+    /* padding-top: 56px; */
+    display: flex !important;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* .carousel-img {
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  } */
+}
+
+/* header.masthead .carousel-caption {
   bottom: 50px;
 }
 
+*/
 .card-container {
   display: flex;
   gap: 20px;
