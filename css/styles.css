@@ -5808,6 +5808,7 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
+    height: 50vw;
   }
 }
 
@@ -11236,6 +11237,10 @@ header.masthead {
 }
 
 #contact-wsp-icon {
-  font-size: 6rem;
+  font-size: 4rem;
   color: var(--bs-secondary);
+}
+.staff-icon {
+  height: 200px;
+  width: 200px;
 }
