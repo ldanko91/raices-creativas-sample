@@ -11010,23 +11010,6 @@ header.masthead h1, header.masthead .h1 {
   /* border-radius: 10%; */
 }
 
-#carousel-title {
-  font-weight: bold;
-    font-size: 5vw;
-    transition: all 0.3s ease;
-  }
-  
-  #carousel-txt {
-    font-weight: bold;
-    font-size: 3vw;
-    transition: all 0.3s ease;
-  }
-  
-  #btn-carr {
-    padding: 1vw 2vw;
-    font-size: 2vw;
-    transition: all 0.3s ease;
-  }
 
 header.masthead {
   position: relative;
@@ -11040,33 +11023,6 @@ header.masthead {
   background-position: center;
 }
 
-@media (max-width: 768px) {
-  .carousel {
-    padding-top: 3.4rem;
-  }
-
-  .carousel-item.active {
-    height: 50vh;
-    /* padding-top: 56px; */
-    display: flex !important;
-    justify-content: center;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  /* .carousel-img {
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-  } */
-}
-
-/* header.masthead .carousel-caption {
-  bottom: 50px;
-}
-
-*/
 .card-container {
   display: flex;
   gap: 20px;
@@ -11243,4 +11199,103 @@ header.masthead {
 .staff-icon {
   height: 200px;
   width: 200px;
+}
+@media (max-width: 768px) {
+  .carousel {
+    padding-top: 3.4rem;
+  }
+
+  .carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    height: 50vh;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .carousel-item.active {
+    height: 50vh;
+    /* padding-top: 56px; */
+    display: flex !important;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+
+  }
+
+  .carousel-img {
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+
+  }
+
+  #carousel-title {
+    font-weight: bold;
+    font-size: 6vw;
+    transition: all 0.3s ease;
+  }
+
+  #carousel-txt {
+    font-weight: bold;
+    font-size: 3vw;
+    transition: all 0.3s ease;
+  }
+
+  #btn-carr {
+    padding: 2.5vw 3vw;
+    font-size: 4vw;
+    transition: all 0.3s ease;
+  }
+
+  /* header.masthead .carousel-caption {
+  bottom: 50px;
+}
+
+*/
+}
+
+@media (min-width: 769px) {
+  .carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .carousel-img {
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  #carousel-title {
+    font-weight: bold;
+    font-size: 4vw;
+    transition: all 0.3s ease;
+  }
+
+  #carousel-txt {
+    font-weight: bold;
+    font-size: 2vw;
+    transition: all 0.3s ease;
+  }
+
+  #btn-carr {
+    padding: 1.5vw 1.5vw;
+    font-size: 2vw;
+    transition: all 0.3s ease;
+  }
 }
