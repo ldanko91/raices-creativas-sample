@@ -11139,6 +11139,8 @@ header.masthead {
   background-color: #566251;
     color: #e3ccad;
   display: flex;
+  align-self: center;
+    align-content: center;
   justify-content: center;
   align-items: center;
   width: 50px;
@@ -11201,6 +11203,12 @@ header.masthead {
 #contact-wsp-icon {
   font-size: 4rem;
   color: var(--bs-secondary);
+  hover-color: var(--bs-primary);
+  }
+  
+  #contact-wsp-icon:hover {
+    color: var(--bs-primary);
+    transform: scale(1.1);
 }
 .staff-icon {
   height: 200px;
@@ -11306,4 +11314,11 @@ header.masthead {
     justify-self: center;
     margin-bottom: 10vw;
   }
+}
+.img-abt {
+  max-width: 50%;
+}
+
+#btn-abt {
+  max-width: 20vw;
 }
